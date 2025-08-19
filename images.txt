@@ -6,5 +6,5 @@ xhofe/alist:latest
 --platform=linux/arm64 xiaoyaliu/alist
 postgres:15-alpine
 ghcr.io/requarks/wiki:2
-bookstack:latest
+ghcr.io/linuxserver/bookstack:latest
 mysql:5.7
