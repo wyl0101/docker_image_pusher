@@ -8,3 +8,6 @@ postgres:15-alpine
 ghcr.io/requarks/wiki:2
 ghcr.io/linuxserver/bookstack:latest
 mysql:5.7
+outlinewiki/outline:latest
+redis:6-alpine
+minio/minio:latest
