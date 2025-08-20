@@ -11,3 +11,5 @@ mysql:5.7
 outlinewiki/outline:latest
 redis:6-alpine
 minio/minio:latest
+postgres
+steveltn/https-portal
