@@ -13,3 +13,4 @@ redis:6-alpine
 minio/minio:latest
 postgres
 steveltn/https-portal
+redis
