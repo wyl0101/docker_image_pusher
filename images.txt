@@ -4,16 +4,7 @@ k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 xhofe/alist:latest
 #支持指定架构
 --platform=linux/arm64 xiaoyaliu/alist
-postgres:15-alpine
-ghcr.io/requarks/wiki:2
-ghcr.io/linuxserver/bookstack:latest
 mysql:5.7
-outlinewiki/outline:latest
-redis:6-alpine
-minio/minio:latest
-postgres
-steveltn/https-portal
-redis
-dockurr/macos
 mysql:8.0
 ghcr.io/linuxserver/bookstack:25.07.2
+ghcr.io/linuxserver/bookstack:25.07.1
