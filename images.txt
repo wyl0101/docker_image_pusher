@@ -16,3 +16,4 @@ steveltn/https-portal
 redis
 dockurr/macos
 mysql:8.0
+ghcr.io/linuxserver/bookstack:25.07.2
