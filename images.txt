@@ -6,5 +6,6 @@ xhofe/alist:latest
 --platform=linux/arm64 xiaoyaliu/alist
 mysql:5.7
 mysql:8.0
+lscr.io/linuxserver/mariadb:11.4.4
 ghcr.io/linuxserver/bookstack:25.07.2
 ghcr.io/linuxserver/bookstack:25.07.1
