@@ -9,3 +9,4 @@ mysql:8.0
 lscr.io/linuxserver/mariadb:11.4.4
 ghcr.io/linuxserver/bookstack:25.07.2
 ghcr.io/linuxserver/bookstack:25.07.1
+onlyoffice/communityserver:12.7.1.1942
