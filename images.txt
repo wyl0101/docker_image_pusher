@@ -10,3 +10,7 @@ lscr.io/linuxserver/mariadb:11.4.4
 ghcr.io/linuxserver/bookstack:25.07.2
 ghcr.io/linuxserver/bookstack:25.07.1
 onlyoffice/communityserver:12.7.1.1942
+mysql:8.0.29
+onlyoffice/communityserver:12.6.0.1900
+onlyoffice/elasticsearch:7.16.3
+onlyoffice/controlpanel:3.5.2.530
