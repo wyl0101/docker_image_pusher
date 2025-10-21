@@ -16,3 +16,6 @@ onlyoffice/elasticsearch:7.16.3
 onlyoffice/controlpanel:3.5.2.530
 onlyoffice/documentserver:8.1
 onlyoffice/mailserver:1.6.75
+owncloud/server:10.15.3
+mariadb:10.11
+redis:6
