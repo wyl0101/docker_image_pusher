@@ -19,3 +19,4 @@ onlyoffice/mailserver:1.6.75
 owncloud/server:10.15.3
 mariadb:10.11
 redis:6
+nextcloud:32.0.0-apache
