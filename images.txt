@@ -5,4 +5,5 @@ xhofe/alist:latest
 --platform=linux/arm64 xiaoyaliu/alist
 #grafana/grafana:12.2
 #linuxserver/bookstack:25.11.5
-linuxserver/bookstack:25.12.1
+#linuxserver/bookstack:25.12.1
+jeessy/ddns-go:v6.15.0
