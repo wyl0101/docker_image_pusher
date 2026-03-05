@@ -6,4 +6,5 @@ xhofe/alist:latest
 #grafana/grafana:12.2
 #linuxserver/bookstack:25.11.5
 #linuxserver/bookstack:25.12.1
-jeessy/ddns-go:v6.15.0
+#jeessy/ddns-go:v6.15.0
+linuxserver/bookstack:25.12.8
