@@ -9,4 +9,7 @@ xhofe/alist:latest
 #jeessy/ddns-go:v6.15.0
 #linuxserver/bookstack:25.12.8
 #vllm/vllm-openai:v0.19.0-cu130
-vllm/vllm-openai:v0.19.0
+#vllm/vllm-openai:v0.19.0
+vllm/vllm-openai:v0.18.1
+#vllm/vllm-openai:v0.18.0
+vllm/vllm-openai:v0.17.1
