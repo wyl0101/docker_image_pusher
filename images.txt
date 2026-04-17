@@ -16,4 +16,5 @@ xhofe/alist:latest
 #vllm/vllm-openai:v0.16.0
 #vllm/vllm-openai:v0.15.0
 #ghcr.io/open-webui/open-webui:main
-ollama/ollama:0.20.7
+#ollama/ollama:0.20.7
+yanwk/comfyui-boot:cu128-megapak
