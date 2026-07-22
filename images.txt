@@ -19,4 +19,15 @@ xhofe/alist:latest
 #ollama/ollama:0.20.7
 #yanwk/comfyui-boot:cu128-megapak
 #openwebui/open-webui:0.9.1-cuda126
-couchdb:3.5.2
+#couchdb:3.5.2
+busybox:1.36.1
+langgenius/dify-api:1.16.0
+langgenius/dify-web:1.16.0
+redis:6.2.14-alpine
+langgenius/dify-sandbox:0.2.15
+langgenius/dify-agent-local-sandbox:1.16.0
+langgenius/dify-plugin-daemon:0.6.3-local
+langgenius/dify-agent-backend:1.16.0
+ubuntu/squid:6.6
+nginx:1.26.1
+postgres:15.7-alpine
