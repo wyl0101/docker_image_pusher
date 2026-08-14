@@ -26,8 +26,9 @@ xhofe/alist:latest
 #redis:6.2.14-alpine
 #langgenius/dify-sandbox:0.2.15
 #langgenius/dify-agent-local-sandbox:1.16.0
-langgenius/dify-plugin-daemon:0.6.3-localregistry.cn-hangzhou.aliyuncs.com/funasr_repo/funasr:funasr-runtime-sdk-online-cpu-0.1.13
+#langgenius/dify-plugin-daemon:0.6.3-local
 #langgenius/dify-agent-backend:1.16.0
 #ubuntu/squid:latest
 #nginx:1.30.3
 #postgres:15.7-alpine
+registry.cn-hangzhou.aliyuncs.com/funasr_repo/funasr:funasr-runtime-sdk-online-cpu-0.1.13
