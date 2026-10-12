@@ -35,4 +35,5 @@ xhofe/alist:latest
 #ccr-2vdh3abv-pub.cnc.bj.baidubce.com/paddlepaddle/paddleocr-vl:latest-nvidia-gpu-offline
 #ccr-2vdh3abv-pub.cnc.bj.baidubce.com/paddlepaddle/paddleocr-genai-vllm-server:latest-nvidia-gpu-offline
 #python:3.10-slim
-python:3.11.16-slim
+#python:3.11.16-slim
+vllm/vllm-openai:v0.29.0
