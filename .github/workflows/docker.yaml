@@ -25,29 +25,13 @@ jobs:
         df -hT
         echo "=============================================================================="
 
-    # 增加可用磁盘空间
-    - name: Maximize build space
-      #############uses: easimon/maximize-build-space@master
-      uses: easimon/maximize-build-space@v10
-      with:
-
-        root-reserve-mb: 8192
-        swap-size-mb: 128
-        remove-dotnet: 'true'
-        remove-haskell: 'true'
-        # 如果空间还是不够用，可以把以下开启，清理出更多空间
-        remove-android: 'true'
-        remove-codeql: 'true'
-        build-mount-path: '/var/lib/docker/'
-
-    - name: Restart docker
-      run: sudo service docker restart
-
+    
     - name: Free up disk space complete
       run: |
         echo "Free up disk space complete"
         echo "=============================================================================="
-        df -hT
+        df -hT / /var/lib/docker
+        df -i
         echo "=============================================================================="
 
     - name: Checkout Code
@@ -148,11 +132,8 @@ jobs:
             echo "=============================================================================="
             df -hT
             echo "=============================================================================="
-            # docker rmi $image
-            # docker rmi $new_image
-            docker rmi -f "$image" >/dev/null 2>&1 || true
-            docker rmi -f "$new_image" >/dev/null 2>&1 || true
-            docker image prune -f >/dev/null 2>&1 || true
+            docker rmi $image
+            docker rmi $new_image
 
             
             echo "磁盘空间清理完毕"
