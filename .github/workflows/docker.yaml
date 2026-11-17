@@ -18,6 +18,68 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+          # 彻底清理 Docker 历史垃圾
+      - name: Deep clean Docker storage
+        run: |
+          echo "========== 清理前磁盘 =========="
+          df -hT
+          df -i
+
+          echo "========== Docker 磁盘占用 =========="
+          docker system df -v || true
+
+          echo "========== 清理 Docker 容器 =========="
+          docker container prune -f
+
+          echo "========== 清理 Docker 镜像 =========="
+          docker image prune -af
+
+          echo "========== 清理 Docker 数据卷 =========="
+          docker volume prune -af
+
+          echo "========== 清理 Docker 网络 =========="
+          docker network prune -f
+
+          echo "========== 清理 Build Cache =========="
+          docker builder prune -af || true
+
+          echo "========== 清理 Buildx Cache =========="
+          docker buildx prune -af || true
+
+          echo "========== 清理系统缓存 =========="
+          sudo apt-get clean
+          sudo rm -rf /var/lib/apt/lists/*
+
+          echo "========== 清理后磁盘 =========="
+          df -hT
+          df -i
+
+          echo "========== Docker 存储占用 =========="
+          docker system df -v || true
+
+             - name: Diagnose disk space
+                                run: |
+          echo "========== 磁盘使用情况 =========="
+          df -hT
+
+          echo "========== inode 使用情况 =========="
+          df -i
+
+          echo "========== Docker 目录 =========="
+          sudo du -sh /var/lib/docker 2>/dev/null || true
+
+          echo "========== Containerd 目录 =========="
+          sudo du -sh /var/lib/containerd 2>/dev/null || true
+
+          echo "========== 临时目录 =========="
+          sudo du -sh /tmp 2>/dev/null || true
+
+          echo "========== 根目录占用排行 =========="
+          sudo du -xhd1 / 2>/dev/null | sort -h
+
+          echo "========== Docker 存储信息 =========="
+          docker info
+          
       # 查看初始磁盘空间
       - name: Before freeing up disk space
         run: |
